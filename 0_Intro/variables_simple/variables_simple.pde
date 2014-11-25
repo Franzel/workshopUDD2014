@@ -1,11 +1,11 @@
 ///DECLARANDO VARIABLES
 
 /// manera basica de declarar una variable
-int x;       //le estamos pidiendo al computador que guarde espacio en su memorai para un int llamado "x"
+int x;       //le estamos pidiendo al computador que guarde espacio en su memoria para un int llamado "x"
 float xPos;  //idem, para un float llamado "xPos"
 
 //Shortcut para declarar mas de una variable al mismo tiempo
-//Son todas del mismo tipo de data, en este caso son 'integers'
+//Son todas del mismo tipo de data, en este caso son "integers", que aca se llaman "int"
 int cat, dog, squirrel; 
 
 
