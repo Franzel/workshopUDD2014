@@ -7,6 +7,7 @@ void draw() {
   fill(255);
   if (mousePressed || keyPressed) {
     point(mouseX, mouseY);
+    ellipse(mouseX, mouseY, 10,10);
   }
 }
 
