@@ -10,8 +10,8 @@ void draw() {
   int nRects;
   float angle = 0; //usaremos esta variable para controlar el Hue
 
-  for (int i=0; i<20; i++) {
-    for (int j=0; j<20; j++) {
+  for (int i=0; i<30; i++) {
+    for (int j=0; j<30; j++) {
       if (angle>=360){
         angle=0; //si pasa del maximo(360), reset a 0
       }
