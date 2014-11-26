@@ -1,5 +1,5 @@
 /*
-Using booleans + if statements to detect if we click inside an area
+Usando booleanos + if statement para detectar si hacemos click dentro del rect
 */
 
 boolean button = false;
@@ -15,28 +15,28 @@ void setup() {
 
 void draw() {
   background(0);
-  // we can nest if statement if we want. The result is the same. Just a matter of style
+  // podemos anidar if statements si queremos, el resultado es el mismo, solo cosa de estilo
   if (mouseX > xPos && mouseX < xPos + rectSize && mousePressed==true) {
     if (mouseY > yPos && mouseY < yPos + rectSize) {
-      button = true; //if alll the above conditions are met, turn the boolean to true
+      button = true; //si todas las condiciones anteriores son verdaderas, el boolean es verdadero
     }
   }
   else {  
-    button = false; // if none of the conditions are met, turn the boolean to false
+    button = false; // si ninguna condicion se cumple, el boolean es falso
   }
 
-  //now we have a boolean switching between true or false
-  //we can use that to control something else
+  //ahora tenemos un boolean que cambia de true a false
+  //podemos usar eso para controlar otra cosa!
   
-  if (button) { //a short way to write if(button==true)
-    fill(0, 255, 0); //if true, use green
+  if (button) { //una forma corta para escribir:  if(button==true)
+    fill(0, 255, 0); //si es true, usa verde
   }
   else {
-    fill(255, 0, 0); //if false, use red
+    fill(255, 0, 0); //si es false, usa rojo
   }
 
   rect(xPos, yPos, rectSize, rectSize);
 
-  println(button); //check boolean state on the console
+  println(button); //comprobemos estado del boolean en la consola para el debug
 }
 

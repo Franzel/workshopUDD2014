@@ -1,17 +1,18 @@
-int xPos;
-int yPos;
+int posX;
+int posY;
 
 void setup() {
   size(800, 800);
-  xPos = 1;
-  yPos = 1;
+  posX = 1;
+  posY = 1;
 }
 
 void draw() {
-
-  for (int x=0; x<width ; x+= 10) {
-    for (int y=0; y<height ; y+= 10) {
-      rect(xPos * x, yPos * y, 5, 5);
+background (250,50,250);
+  
+  for (int x=0; x<width ; x+= 20) {
+    for (int y=0; y<height ; y+= 20) {
+      rect(posX * x, posY * y, 10, 10);
     }
   }
 }
