@@ -1,6 +1,6 @@
 /*
 Usando booleanos + if statement para detectar si hacemos click dentro del rect
-*/
+ */
 
 boolean button = false;
 float xPos, yPos;
@@ -20,18 +20,16 @@ void draw() {
     if (mouseY > yPos && mouseY < yPos + rectSize) {
       button = true; //si todas las condiciones anteriores son verdaderas, el boolean es verdadero
     }
-  }
-  else {  
+  } else {  
     button = false; // si ninguna condicion se cumple, el boolean es falso
   }
 
   //ahora tenemos un boolean que cambia de true a false
   //podemos usar eso para controlar otra cosa!
-  
+
   if (button) { //una forma corta para escribir:  if(button==true)
     fill(0, 255, 0); //si es true, usa verde
-  }
-  else {
+  } else {
     fill(255, 0, 0); //si es false, usa rojo
   }
 
