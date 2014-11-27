@@ -1,4 +1,5 @@
 //Basado en un ejemplo por Kyle Li
+//Este ejemplo dibuja Circulos en posicion, escala y color random via una funcion
 
 void setup() {
   size(500, 500);
