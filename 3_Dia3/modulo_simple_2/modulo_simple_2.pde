@@ -13,7 +13,7 @@ void draw() {
   background (0);
   translate(width/2, height/2);
 
-  if(frameCount % 30 == 0) {
+  if(frameCount % 100 == 0) {
     moveX *= -1;
   }
   if(frameCount % 15 == 0) {
